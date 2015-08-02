@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Strawbies (TEI 2016)</title>
+    <link rel="stylesheet" type="text/css" href="css/acm-sig.css">
+    <link rel="stylesheet" media="print" type="text/css" href="css/acm-sig-print.css">
+    <script src="js/cssregions.js"></script>
+    <script src="js/acm-references.js"></script>
+    <style>
+    #figure1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 3.33in;
+      height: 4.1in;
+    }
+
+    #figure2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3.33in;
+      height: 4.44in;
+    }
+
+    #figure3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7in;
+      height: 2.5in;
+    }
+    
+    #figure4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7in;
+      height: 3in;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+    </style>
+  </head>
+  <body onload="generateReferenceList();">
+
+    <!-- Page 1 -->
+    <div class="page">
+      <div class="page-content">
+        <div id="citation"> </div>
+        
+        
+        <div class="title">Strawbies: Designing an inexpensive, portable, and fluid tangible programming game</div>
+
+        <!-- <table style="width: 100%; margin-top: 10px;">
+        <tr>
+          <td class="authors">Felix Hu</td>
+          <td class="authors">Ariel Zekelman</td>
+          <td class="authors">Michael Horn</td>
+          <td class="authors">Frances Judd</td>
+        </tr>
+        <tr style="vertical-align: top;">
+          <td class="affiliation">Northwestern University<br>Computer Science</td>
+          <td class="affiliation">School of the Art<br>Institute of Chicago</td>
+          <td class="affiliation">Northwestern University<br>Computer Science<br>Learning Sciences</td>
+          <td class="affiliation">Tangible Tech<br>Collaborative</td>
+        </tr>
+        </table>
+        <div class="email" style="font-size: 11.5pt;">felixhu12@gmail.com, azekel@saic.edu, michael-horn@northwestern.edu, fjudd@tangitech.org</div> -->
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div class="copyright">
+          Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the Owner/Author. <br>
+          Copyright is held by the owner/author(s).<br>
+          <i>IDC '15</i>, June 21-25, 2015, Medford, MA, USA<br>
+          ACM 978-1-4503-3590-4/15/06.<br>
+          <a href="http://dx.doi.org/10.1145/2771839.2771866" style="color: black; text-decoration: none;">http://dx.doi.org/10.1145/2771839.2771866</a>
+        </div>
+        
+        <div class="column left" style="height: 5.8in;"></div>
+        <div class="column right" style="height: 6.5in"></div>
+
+        <div class="page-footer"></div>
+      </div>
+    </div>
+
+    
+    <!-- Page 2 -->
+    <div class="page">
+      <div class="page-content">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <div class="page-footer"></div>
+      </div>
+    </div>
+
+    
+    <!-- Page 3 -->
+    <div class="page">
+      <div class="page-content">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <div class="page-footer"></div>
+      </div>
+    </div>
+
+    
+    
+    <!-- Page 4 -->
+    <div class="page">
+      <div class="page-content">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <div class="page-footer"></div>
+      </div>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page">
+      <div class="page-content">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <div class="page-footer"></div>
+      </div>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="page">
+      <div class="page-content">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <div class="page-footer"></div>
+      </div>
+    </div>
+    
+    
+    <div id="article-content">
+      <h1 class="no-number">Abstract</h1>
+      <p>
+        Strawbies is a tangible programming game designed for children ages 5 and up. Players arrange physical programming tiles to guide the movement of an onscreen character (Awbie) through an infinitely expanding world displayed on the screen of an iPad. Strawbies is portable, inexpensive, and fluidly interactive—characteristics made possible with the use of an Osmo game system that includes a mirror to reflect images in front of the iPad through the front­-facing camera. Here we describe a set of principles that guided our design process along with evaluation sessions with children in schools and a museum. The combination of inexpensive tangible tiles and real-time computer vision through a tablet computer opens new possibilities for tangible computer programming to reach a broader audience. We conclude with an overview of the important design considerations for future tangible programming systems that make use of these techniques.
+      </p>
+      
+      <h2 class="no-number">Categories and Subject Descriptors</h2>
+      <p style="text-align: left;"> H.5.m [<b>Information interfaces and
+          presentation (e.g., HCI)</b>]: Miscellaneous.
+      </p>
+      
+      
+      <h2 class="keywords no-number">Keywords</h2>
+      <p>
+        Children; programming; tangibles; games; strawberries.
+      </p>
+      
+      
+      <h1>Introduction</h1>
+      <p>
+        Strawbies is a tangible programming game designed for children ages 5 and up that combines the use of inexpensive tangible tiles and real-time computer vision through a stationary iPad tablet (Figure 1). Players arrange wooden tiles to guide the movement of an onscreen character (Awbie) through a rich and infinitely expanding world filled with obstacles, thieving rodents, and strawberries. Strawbies is portable, inexpensive, and fluidly interactive. These features are made possible by the use of an Osmo game system (playosmo.com) that uses a mirror to reflect images in front of the iPad through the front­-facing camera. In creating Strawbies, we sought to explore new possibilities opened by this system to create an engaging and collaborative game for wide range of ages and playstyles.
+      </p>
+      <p>
+        To this point, tangible programming systems have had to make tradeoffs between inexpensive materials, portability, and real-time interaction. Many tangible programming systems have opted to use “smart” tangible components with embedded electronics and power supplies (e.g. [Gross-roBlox, McNerney, Wyeth]). This has the advantage of offering real-time interactive systems that can be used anywhere, with the downside that these systems are relatively expensive to create and manufacture. Other tangible programming systems have instead opted to use computer vision and “passive” tangible blocks or tiles (e.g. [Horn’12]). But, the ability to continuously track and respond to programming blocks has either required a stationary overhead camera fixture or an interactive surface with built-­in camera hardware. It is possible to instead use a mobile device like an iPad, but this requires a point-­and­-shoot style of interaction (e.g. [Cite Kibo/Roberto]) in which real-time interaction is sacrificed for the sake of portability. The Osmo's use of a mirror over the top of the iPad’s front-facing camera makes it possible to obtain the best of both worlds by combining fluid, real-­time interaction with a mobile device and low-­cost tangible materials. 
+      </p>
+      <p>
+        We believe that these characteristics open opportunities for designers to create engaging tangible programming systems that are accessible to a much broader audience. Our aim with Strawbies is to explore this design space. Early on we discovered that despite the innovation of the Osmo, achieving our design goals was more difficult than we imagined. We struggled with both the game design and the programming block design over many iterations before we felt that we had achieved a system that was inviting, engaging, and easy for children to learn on. Testing sessions with children in homes, schools, out-of-school programs, and a children’s museum offered us quick feedback and helped us articulate design principles to support a versatile and engaging programming game. In this paper we describe our design process in more detail and share insights from our evaluation sessions. 
+      </p>
+
+      <h1>Related Work</h1>
+      <p>
+        Our project builds on a long and rapidly growing tradition of programming environments for young children 
+        [<cite ref="disessa-2000"></cite>, 
+        <cite ref="scratchjr13"></cite>, 
+        <cite ref="horn-2013"></cite>, 
+        <cite ref="montemayor-2004"></cite>, 
+        <cite ref="oh-2013"></cite>,
+        <cite ref="papert-1980"></cite>, 
+        <cite ref="resnick-2009"></cite>,
+        <cite ref="roblocks08"></cite>,
+        <cite ref="sapounidis-2013"></cite>,
+        <cite ref="sipitakiat-2012"></cite>,
+        <cite ref="weintrop-2013"></cite>,
+        <cite ref="wyeth-2008"></cite>]
+        (see also [<cite ref="mcnerney-2004"></cite>] for an excellent account of older work dating back to the 1970s). 
+        There is also growing momentum around the idea of supporting computational literacy activities throughout K-12 education, starting at the earliest grade levels. Our project contributes to this space by blending the flexibility, portability, and practicality of tangible programming with an open-ended formatting, which enables our game to be highly responsive to the spontaneity in early childhood learning.
+      </p>
+
+      <h1>Design Principles</h1>
+      <p>
+        Strawbies began as an exploration into using the Osmo to create a tangible programming environment. As part of our design process we settled on several design principles that articulated both a set of pedagogical values and the kind of experience we hoped to create.
+      </p>
+      <p>
+        <b>Fun and Inviting:</b> We sought to create a game that was entertaining, attractive, and not intimidating. We hoped that the tangible objects would attract kids’ attention from a distance and draw them into an engaging experience.
+      </p>
+      <p>
+        <b>Collaborative:</b> Research in the learning sciences suggests that kids spontaneously form diverse and effective patterns of collaboration in game play [Stevens, Nasir]. Our observations of children playing Strawbies corroborated these findings with siblings, classmates, and friends engaging in a surprising variety of joint activity. It was important, therefore, that our game create space for diverse collaborative arrangements with two, three, and even four or more.
+      </p>
+      <p>
+        <b>Responsive:</b> It was important for the game to support fluid and real-time interaction. As much as possible we wanted the game to “responds immediately, clearly and predictably to users’ actions.” [Snibbe + Raffle]
+      </p>
+      <p>
+        <b>Simple but Complex:</b> Even though we limited ourselves to a relatively small library of programming tiles, we wanted to create enough complexity in the combination of these blocks for the game to remain compelling for longer play sessions or more experienced players. 
+      </p>
+      <p>
+        <b>Developmentally Aligned:</b> We wanted to ensure that the content of our game was aligned with the cognitive, perceptual­-motor, and social ability of our target audience.
+      </p>
+      <p>
+        <b>Portable:</b> The system must be easy to setup and transport to classrooms, museums, homes, after-school programs, summer camps, etc.
+      </p>
+      <h2 class="no-number">Learning Goals</h2>
+      <p>
+        Our target age range is 5 and up. Our learning goals were structured for children who have had little or no experience with programming languages.
+      </p>
+      <p>
+        <b>Sequencing:</b> The game should familiarize and reinforce players with the concept of using sequences of blocks to construct plans.
+      </p>
+      <p>
+        <b>Intrinsic Integration:</b> Intrinsic Integration [Habgood + Ainsworth] is a principle from the learning sciences that argues that the best and most fun parts of a game should also be where the important learning is taking place. This is in contrast to using incentives to motivate players to engage in activities that would otherwise be seen as tedious.
+      </p>
+      <p>
+        <b>Slow Learning Progression:</b> We didn’t want to force kids to create longer, more complex programs right away. In fact, it’s possible to play the game using only one or two blocks at a time, never picking up a repeat block and never creating a sequence. Instead, we sought to subtly encourage (but never force) kids to explore new concepts, at their own pace, and only when they are ready. 
+      </p>
+
+      <h1>Design Overview</h1>
+      <p>
+        Our current iteration of Strawbies features an infinitely expanding world filled with obstacles, adversarial characters, and strawberries (Figure 1). Players slide and connect coding tiles in front of an iPad to guide Awbie on his ever-lasting quest for more strawberries. Obstacles include trees, cactuses, and water that can derail you from a strategically planned sequence of instructions. Large rodent characters will also steal berries from Awbie. Getting multiple strawberries with one sequence triggers Frenzy Mode [FIGURE], which causes Awbie to go into a fun frenzy and eat even more strawberries. Lakes with lilypad paths and treasure islands are designed to encourage the use more complex sequences of programming tiles. Large bouncing strawberries are scattered throughout the world, which lead to short tutorials that show possible patterns using different sequences of blocks.
+      </p>
+      <p>
+        The game includes six action blocks: Up, Down, Right, Left, Rainbow, Flashlight (Figure X). The direction blocks moved Awbie in the specified direction, Rainbow transported Awbie into a different part of the world, and Flashlight scared away rats. There were parameter blocks (1, 2, 3 or 4) that attach to action blocks and multiply the times an attached direction block executes. Repeat blocks can also be used to repeat the entire sequences of tiles multiple times depending on the quantifier block used. [FIGURE]
+      </p>
+
+      <h1>Participants</h1>
+      <p>
+        We formally evaluated our design with 29 children in two locations. Our first round of testing was with five kindergartners and five 2nd graders at a local elementary school (4 boys and 10 girls). Children participated in groups of two or three peers from the same grade, and each session lasted around 15 minutes. We started each session with minimal instructions and then allowed children to explore on their own. At the very end of each session, we prompted students to try repeat tiles and parameter values if they had not already. 
+      </p>
+      <p>
+        Our second round of testing involved 7 sessions with 8 boys and 7 girls at a local children’s museum (ages 5 to 10). Children in these sessions occasionally worked alone, but more often in groups of 2 or 3. There was no set time limit, but sessions generally lasted between 3 and 15 minutes, with one pair of siblings spending over 40 minutes (average session length 14:30). Parents were also invited to participate but, for the most part, allowed children to explore on their own. All sessions at both locations were video recorded with informed consent of parents and children.
+      </p>
+      <p>
+        We also conducted many rounds of informal testing with children at a local elementary school, two out-of-school programs, and in homes. We did not collect research data in these informal sessions but instead used them to test and refine our design. 
+      </p>
+
+      <h1>Design Evolution and Evaluation</h1>
+      <p>
+        Our design process has involved several major iterations in which we explored different approaches for the iPad app and tangible programming tiles. Here we describe specific categories of evolution, since each category had individual iterations independent of our major iterations.
+      </p>
+      <p>
+        Each feature generally began with ideas heavily borrowed from existing successful VPLs such as Scratch and Blockly. As we tested these features, we modified and redesigned them as necessary.
+      </p>
+
+      <h2 class="no-number">Block Design</h2>
+      <p>
+        The most common actions when playing with a tangible programming environment is connecting and detaching coding blocks. We wanted to create blocks that could easily attach and detach, yet maintain structural integrity. We also wanted our blocks to intuitively connect together, without the need of any tutorials.
+      </p>
+      <p>
+        We went through several iterations of connection techniques, ultimately settling on two different connection types. The first connection technique is an arrow-hook that attaches action blocks together. This connector allowed action blocks to be attached on a surface only by sliding. The connection was also secure enough such that users could move attached blocks around on a surface without them coming apart. The design was intuitive for our users, as there is an arrow-shaped gap on each action block, invoking the action of connection. We experimented with two previous iterations of connection techniques: our first iteration [Figure] was too cumbersome to attach, and our second iteration [Figure] was too easily detached).
+      </p>
+      <p>
+        The second connection technique was inspired by the circular nature of the TopCode design. We used this connector to attach quantifier and action blocks. Our first iteration of blocks featuring TopCodes allocated a large amount of block space to the TopCode itself [Figure]. By incorporating TopCodes into our connection technique, we were able to add illustrations to the blocks, without increasing the size of the blocks which was undesirable due to the already limited play space defined by the Osmo. 
+      </p>
+      <h3>Evaluation</h3>
+      <p>
+        We observed two girls in Kindergarten playing Strawbies in a classroom for a 30 minute session. In this session, one girl, Player 1, had played Strawbies before, months back. The other girl, Player 2, had never played Strawbies. When the game started, Player 1 assumed full control of the game, immediately acquiring strawberries. This went on for almost 8 minutes, while Player 1 explained to Player 2 how to play the game. We observed that Player 1 was only playing the game using individual commands. As Player 2 played with blocks, she began constructing more elaborate sequences, without prompts from the game. After 8 minutes, Player 2 suggested that they try out her constructed sequence.
+      </p>
+      <p>
+        Our current blocks are fun and inviting: they use colorful illustrations, and are thick and fun to play with. They are simple and complex: players can construct more elaborate sequences, only if they wish. They are developmentally appropriate: they contain symbols as well as words, and invoke connection.
+      </p>
+
+      <h2 class="no-number">Navigation</h2>
+      <p>
+        Navigating the world of Strawbies was the biggest roadblock for our players, and we went through several iterations to try and fix the problem. There were two important choices that we made: relative vs. absolute directionality, and separating vs. combining movement and direction blocks.
+      </p>
+      <p>
+        We chose absolute over relative directionality. Turning left and right is a system appropriate for real life robotics systems. However, on a digital screen, absolute directionality (face left, right, up, down) is more natural. We experimented with using relative directionality, having some success after finding the right diagram [Figure]. We concluded that turning was too difficult to visualize in a digital screen with a top-down view, and was not conducive to planning.
+      </p>
+      <p>
+        We chose combining movement and direction blocks over keeping them separate. For example, the two block command “Left, Walk” became just “Left”. Despite numerous attempts to show that a “Left” block actually meant “face left” [Figure], players still assumed that a Left block meant move left. Grammatically, keeping turning and walking separate also did not make sense. In English, people say “walk left”, but in our game, “Walk, Left” wouldn’t make sense; the character would first move in the direction that it is currently facing, then turn left. Lastly, combining movement and direction blocks is concise, reducing the number of blocks needed by half.
+      </p>
+      <h3>Evaluation</h3>
+      <p>
+        We observed two siblings, a boy age X and girl age Y playing Strawbies in a children’s museum for 40 minutes. The siblings were collaborative, and often discussed where they should go with phrases like “oh look there’s two strawberries down there!” and “no we should go left first then down this way we can get more”. Their constructed sequences consisted of 1-3 blocks, often detaching and attaching different sequences to fit Awbie’s situation. As the two siblings watched Awbie navigate their constructed sequences, we noticed that they were consistently saying each commands as Awbie executed them. This was something that we had only noticed once before combining movement and direction blocks, but became a common trend after.
+      </p>
+      <p>
+        Our navigation blocks are developmentally aligned: children did not struggle with translating their plans into action blocks. Instead we saw a lot of verbal repeating of commands as Awbie executed them, which we thought could be a sign that our direction blocks are aligned with their cognitive perception. The blocks also support sequencing: commands are concise and allow for more elaborate planning. We saw an increase in the complexity of constructed sequences upon combining movement and direction blocks. 
+      </p>
+
+      <h2 class="no-number">Feedback</h2>
+      <p>
+        Children are constantly constructing models to explain how things work. We needed Strawbies to provide immediate, consistent, and clear feedback to our players. Without proper feedback, children may construct incorrect models that prevent them from effortlessly engaging with the game. We tried to provide feedback that is a reflection of blocks placed within the game’s field of vision, in a way that was immediate without being distracting or disruptive. Aside from the natural feedback provided by feeling and connecting tangibles, our feedback was limited to the digital space. Our passive tangibles, which are laser cut from wood, cannot provide any kind of ‘smart’ feedback.
+      </p>
+      <p>
+        We explored several options before settling on our current iteration, which uses a projection to show how Awbie will travel if the sequence in the field of vision is run [Figure]. We first used half the screen to illustrate what the camera was picking up [Figure]. When a player slides a sequence in front of the iPad, a digital replica of the blocks comes up on screen. We thought this was redundant, and also took up too much screen space.
+      </p>
+      <p>
+        We then placed a live video-feed from the game’s camera in the upper right corner, which circled TopCodes in red as they were recognized [Figure]. We wanted this to bridge the connection between the physical and digital. Despite numerous verbal prompts during testing, we were unable to get children to pay attention to the video feed.
+      </p>
+      <p>
+        Our current iteration integrates feedback with gameplay. We project a path of Awbie’s future actions onto the world, providing epistemic action [cite] for our players [figure]. The path animates incrementally from Awbie to visualize his potential movement. We felt that this was clear and immediate, but not disruptive or distracting. We hoped this projection will assist our players in the construction of more elaborate plans. 
+      </p>
+      <h3>Evaluation</h3>
+      <p>
+        After the introduction of a projected path, children began modifying their sequence or adjusting the location of their sequence upon seeing different projections than what they had in mind. We also saw players construct more elaborate plans. We observed three Kindergarten students, 2 girls and 1 boy, in a classroom playing Strawbies for 30 minutes. 4 minutes into the game, the children were unable to compile their code, because they were all reaching for the screen and tapping the screen, blocking the TopCodes from being read. One girl shoos away the other players hands, and says “the path needs to be there!” 8 minutes into the game, the boy had a sequence that ran Awbie into a rodent. The two girls yelled, “no! we don’t want to touch it.” The girls then replaced a direction block.
+      </p>
+      <p>
+        The projected path is collaborative: players can agree on a path before compiling. The path is developmentally aligned: our players quickly understood the purpose of the path, and was able to use it effectively. The path helped players create accurate and thoughtful plans, and also led players to troubleshoot when the path was different from the constructed physical sequence. 
+      </p>
+      <p>
+        We are working on making our feedback more responsive. The path projection reacts quickly to blocks that are recognized (under 1.5 seconds), but is not immediate. Without immediate feedback, some children would quickly move the block around, hoping for something to happen on screen. This action however only exacerbates the issue, causing feedback to no longer be clear or predictable. 
+      </p>
+
+      <h2 class="no-number">Compiling</h2>
+      <p>
+        Tangible programming environments have a mechanism that players can use to compile, or ‘start’ their code. Using the Osmo and iPad gave us the flexibility of having this mechanism exist in either the TUI or GUI.
+      </p>
+      <p>
+        Our initial reaction was to keep as much interaction to the tangible interface as possible. One of our first attempts at a purely tangible interface compiled in real time. When blocks slid in front of the game’s field of vision, the character on-screen immediately responded by following and looping those instructions. When those blocks were moved away, the character immediately stopped. If the user attached a When block to any sequence of blocks, the game would pause and bring up a helper which asked if players wanted to save the event block to memory. We wanted our players to think of optimal loops for the world, with event triggers that act as safeguards against dangers (water and birds).
+      </p>
+      <p>
+        The responsiveness of this real-time interactivity was immediate, but not clear or predictable. Our play testers had trouble maintaining control over their character, and often relied on using hands to cover up blocks when they wanted their character to stop. Moving blocks outside of the camera’s range was too tedious. The field of vision of the camera was also unclear. Sometimes, the camera would pick up blocks that a player forgot about, resulting in unpredictable behavior.
+      </p>
+      <p>
+        Our current iteration uses tapping the screen as our mechanism for compiling [figure]. Players can easily reuse their sequence simply by re-tapping the screen. Once the screen is tapped, blocks can be removed from the game’s vision without affecting the game. This mechanism also has the added benefit of immediately demonstrating that Strawbies can be tapped as well as controlled by tangibles. Without this quick introduction, it was hard to get our users to tap the screen without explicit tutorials. 
+      </p>
+      <p>
+        The disadvantage of this mechanism is that when users tap the screen, their arm can block a portion of the image that is sent to the game. We tried to resolve this issue by making the tap box of the iPad almost the entire size of the screen, and added a one second delay to the game’s image recognition.
+      </p>
+      <h3>Evaluation</h3>
+      <p>
+        We observe two girls in Kindergarten playing Strawbies in a 30 minute session. The girls had no problem touching the screen to compile their code. However, for the first 10 minutes, they would keep their finger on the screen, in the direction of movement until the character stopped moving. It seemed that they thought Awbie was controllable by dragging as well. While one girl kept her finger on the screen, the other girl shifted blocks around below the girl’s arm. The game’s vision was not getting the full picture of what was happening under the girl’s arm, resulting in inconsistent and confusing actions from Awbie. 
+      </p>
+      <p>
+        After 10 minutes, they wanted to try the “Rainbow” command, a new block that had no path projection. The girls simply tapped the screen, and watched what happened. After this, the girls started to only tap the screen to compile. A few minutes later, the dragging behavior came back when Awbie was not moving as they had planned.
+      </p>
+      <p>
+        We observed players to compile their code in different ways. Some tapped in the direction they wanted Awbie to go, and others tried to drag Awbie around. We weren’t worried about this behavior, as tapping to compile was an open enough mechanic such that many similar motions achieved the same effect. Eventually, as players constructed more elaborate sequences, tapping to compile became the predominant action. 
+      </p>
+      <p>
+        There were a lot of times where Strawbies was very unresponsive. This happened when hands blocked the camera from seeing the blocks. Players took minutes to figure out that they had to move their hands away before the game could respond. This was fine in a classroom setting, where children are familiar with the game, but is not ideal for a more busy space such as a museum. We are hoping to rectify this problem in our next tutorial by introducing a mat which contains two compile buttons that must be simultaneously pushed.
+      </p>
+
+      <h2 class="no-number">Open World Environment</h2>
+      <p>
+        Our first game had a linear narrative, consisting of a series of puzzles [figure]. The player puts down a sequence of blocks, presses start and watches the character navigate through the puzzle. If the character ran into water, the level would restart from the beginning. This style was heavily influenced by Hour of Code’s Introduction to Code series [CITE]. We found this approach to be ineffective in open and collaborative spaces with multiple players on the same device. It was difficult for players to collaborate, as there was usually only one answer to each problem. New players also had trouble understanding the game, as each new level used ideas introduced in previous levels. The game was also all around difficult, and failed to be engaging.
+      </p>
+      <p>
+        For the next iteration, we moved away from the classic puzzle game [CITE Costikyan, Flanagan], which tend to be competitive, linear, and have binary win/lose states. We instead focused on developing a game which encouraged collaboration between players across different experience levels and ages by supporting different play-styles. This meant that we had to create a more networked game, one which had real decisions with equally plausible outcomes. [CITE] 
+      </p>
+      <p>
+        We decided to structure our game around a randomly generated open world environment, filled with interactable objects like strawberries, rats, cactuses, trees, water, animals, and more [figure]. We took out win/lose states, and instead introduced a more gradual build up of possessions that players could acquire. For example, finding seeds in the world allows you to grow strawberry plants in your farm. Making contact with undesired objects such as rats and cactuses sets Awbie off of a projected path, which deter players from further running into obstacles.
+      </p>
+      <p>
+        We hoped that by having an expansive world filled strawberries and other objects in all directions, we set up a space for more open-ended and light-hearted collaboration There are multiple right answers, and there are no wrong answers. We also wanted to encourage planning, but wanted to do it in a way that was fun. 
+      </p>
+      <p>
+        There was still structure in the game. We introduced lakes, with lilypads that lead to a treasure island in the middle  [figure]. To get to the island, players had to use a sequence of blocks that would get the character to the island. If the sequence did not do so, the character falls into the water and is transported back to the start of the lake. This gave players the option to explore more difficult puzzles, but they are free to move on if they wish.
+      </p>
+      <p>
+        We also introduced “Frenzy Mode”, a fun animation that Awbie goes into when he is about to get multiple Strawbies with one sequence of blocks. This results in more Strawbies, a quicker movement speed, and fun animations. We felt that this was another example of adding structure into what is otherwise an open world game.
+      </p>
+      <h3>Evaluation</h3>
+      <p>
+        We noticed a big change in how players interacted with the game upon introducing an open-world environment. We heard a lot more conversations about decisions and goals, much like this excerpt from a conversation between two boys in Grade 2: P1: “Let’s keep going. Wait actually I think I see up” P2: “No I think we should go down.” P1: “Yeah but if we go up we can use Tornado!”.
+      </p>
+      <p>
+        We also observed groups of children with different tendencies play together. In one example, a boy and girl in Kindergarten are playing, and the boy continuously to Rainbow around the world. The girl says “See! We’re not getting any Strawbies.” After some discussion, the boy conceded, and the girl moved her sequence of blocks in front of the iPad.
+      </p>
+      <p>
+        Lakes were also effective. Many of our players understood that a more exact and elaborate sequence was necessary to reach the middle treasure island. Some players attempted to solve the puzzle, but others moved onto other goals. We saw the same behavior with Frenzy Mode. Many children only attempted chaining upon reaching a large obvious chain of Strawbies, while others attempted chaining at every possibility. Players were delighted when they pulled off a successful chain, and we thought that was a good example of integrated learning.
+      </p>
+      <p>
+        The open world environment is fun and inviting: players can come and go with ease, and play the game how they wish. The environment is collaborative, supporting typical classroom struggles such turn-taking, sharing, and differing goals. The environment is simple and complex: players can learn at their own pace, and build more complex sequences as they wish. 
+      </p>
+      
+      <h1>Conclusion</h1>
+      <p>
+        We were able to create an inexpensive, portable, and fluid tangible programming environment by using the Osmo play system. Portability allowed for players to play Strawbies in a range of spaces. Inexpensive and passive tangibles allowed us to rapidly prototype and iteratively design our game. Fluidity allowed for a truly engaging experience that kept our players playing.
+      </p>
+      <p>
+        Through our long and iterative design process, we learned some important lessons that we believe are important for games that use an Osmo and iPad. Games should be designed using existing tablet interactions. Unlike a custom exhibit in a museum, iPads afford certain interactions that users will expect.
+      </p>
+      <p>
+        Games must be responsive. Passive tangibles are unable to provide ‘smart’ feedback, so the screen must be responsive to the player’s actions in the physical space. A consistent response can be difficult to achieve using an Osmo, because hands will naturally block portions of the camera’s vision. We’ve found that a consistent response can be achieved through fast image recognition, smart image analysis, and careful observation of how players move their hands. The lack of reliable, immediate, and consistent responses from the screen will be a roadblock that prohibits engagement.
+      </p>
+      <h1>Acknowledgements</h1>
+      <p>
+      We thank the administrative teams at Catherine Cook School and Francis W. Parker School for their support. We also thank all the children who have given us valuable feedback through testing. And we thank Eric Uchalik for designing the assets.
+      </p>
+      
+      <h1>References</h1>
+      <ol class="references">
+      <!--
+      <li id="bers-2008">Bers, M. (2008). <i>Blocks to Robots: Learning with Technology in the Early Childhood Classroom</i>. Teachers College Press.</li> 
+      -->
+      <li id="cuban-2009">Cuban, L. (2009). <i>Oversold and underused: Computers in the classroom</i>. Harvard University Press.</li>
+      <li id="drwagon13">Chawla, K., Chiou, M., Sandes, A., &amp; Blikstein, P. (2013). Dr. Wagon: a 'stretchable' toolkit for tangible computer programming. In <i>Proc. Interaction Design and Children</i> (IDC'13), 561-564.</li>
+      <li id="disessa-2000">diSessa, A. (2000). <i>Changing Minds: Computers, Learning, and Literacty.</i> MIT Press.</li>
+      <li id="scratchjr13">Flannery, L.P., Silverman, B., Kazakoff, E.R., Bers, M.U., Bontá, P., &amp; Resnick, M. (2013). Designing ScratchJr: Support for early childhood learning through computer programming. In <i>Proc. Interaction Design and Children</i> (IDC'13), 1-10.</li>
+      <li id="horn-2013">Horn, M.S. (2013). The role of cultural forms in tangible interaction design. In <i>Proc. Tangible, Embedded, and Embodied Interaction</i> (TEI'13).</li>
+      <li id="topcodes">Horn, M. TopCode: Tangible Object Placement Codes. http://users.eecs.northwestern.edu/~mhorn/topcodes/</li>
+      <li id="horn-2012">Horn, M.S., Crouser, R.J., &amp; Bers, M.U. (2012). Tangible interaction and learning: The case for a hybrid approach. <i>Pers. and Ubiq. Computing, 16</i>(4), 379-389.</li>
+      <li id="roberto13">Horn, M.S., AlSulaiman, S., Koh, J. (2013). Translating Roberto to Omar: Computational literacy, stickerbooks, and cultural forms. In <i>Proc. IDC'13</i>, 120-127.</li>
+      <!-- <li id="horn-2014">Horn, M.S., Weintrop, D., and Routman, E. (2014). Programming in the Pond: A Tabletop Computer Programming Exhibit. In <i>Proc. ACM Human Factors in Computing Systems (CHI'14 extended abstracts).</i></li> -->
+      <!-- <li id="kazakoff-2014">Kazakoff, E.R. &amp; Bers, M.U. (2014). Put your robot in, Put your robot out: Sequencing through programming robots in early childhood.  <i>Journal of Educational Computing Research, 50</i>(4).</li>  -->
+      <li id="mcnerney-2004">McNerney, T. (2004). From turtles to tangible programming bricks: explorations in physical language design. <i>Pers. and Ubiq. Computing, 8</i>(5), 326-337.</li>
+      <li id="montemayor-2004">Montemayor, J., Druin, A., Chipman, G., Farber, A., &amp; Guha, M.L. (2004). Tools for children to create physical interactive StoryRooms. <i>Computers in Entertainment: Educating children through entertainment Part II, 2</i>(1). </li>
+      <li id="oh-2013">Oh, H., Deshmane, A., Li, F., Han, J. Y., Stewart, M., Tsai, M., &amp; Oakley, I. (2013). The digital dream lab: tabletop puzzle blocks for exploring programmatic concepts. In <i>Proc. Tangible, Embedded and Embodied Interaction</i> (TEI'13)</li>
+      <li id="osmo">Osmo. https://www.playosmo.com</li>
+      <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children, Computers, and Powerful Ideas.</i> New York: Basic Books. </li>
+      <!-- <li id="nrc-2011">National Research Council. (2011). <i>Report of a Workshop of Pedagogical Aspects of Computational Thinking.</i> Washington, D.C.: The National Academies Press.</li> -->
+      <li id="resnick-2009">Resnick, M., Maloney, J., Monroy-Hernández, A., Rusk, N., Eastmond, E., Brennan, K., Millner, A., Rosenbaum, E., Silver, J., Sliverman, B. &amp; Kafai, Y. (2009). Scratch: programming for all. <i>Communications of the ACM, 52</i>(11), 60-67.</li>
+      <li id="roblocks08">Schweikardt, E., &amp; Gross, M.D. (2008). The robot is the program: interacting with roBlocks. In <i>Proc. Tangible and Embedded Interaction</i> (TEI'08), 167-168.</li>
+      <li id="sapounidis-2013">Sapounidis, T., &amp; Demetriadis, S. (2013). Tangible versus graphical user interfaces for robot programming: exploring cross-age children’s preferences. <i>Personal and ubiquitous computing, 17</i>(8), 1775-1786.</li>
+      <li id="sipitakiat-2012">Sipitakiat, A., &amp; Nusen, N. (2012). Robo-Blocks: designing debugging abilities in a tangible programming system for early primary school children. In <i>Proc. Interaction Design and Children</i> (IDC'12), 98-105.</li>
+      <li id="weintrop-2013">Weintrop, D., &amp; Wilensky, U. (2013). RoboBuilder: A Computational Thinking Game. In <i>Proc. ACM Technical Symposium on Computer Science Education</i>, 736-736.</li>
+      <li id="wyeth-2008">Wyeth, P. (2008). How young children learn to program with sensor, action, and logic blocks. <i>Journal of the Learning Sciences, 17</i>(4), 517-550.</li> 
+      </ol>
+    </div>
+    <div id="reference-details"></div>
+  </body>
+</html>
