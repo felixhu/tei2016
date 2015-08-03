@@ -268,17 +268,25 @@
         Navigating the world of Strawbies was the biggest roadblock for our players, and we went through several iterations to try and fix the problem. There were two important choices that we made: relative vs. absolute directionality, and separating vs. combining movement and direction blocks.
       </p>
       <p>
-        We chose absolute over relative directionality. Turning left and right is a system appropriate for real life robotics systems. However, on a digital screen, absolute directionality (face left, right, up, down) is more natural. We experimented with using relative directionality, having some success after finding the right diagram [Figure]. We concluded that turning was too difficult to visualize in a digital screen with a top-down view, and was not conducive to planning.
+        Separating out the action of turning one's body from the action of moving forward is appropriate for many programming systems (such as the Logo turtle). However, for the purposes of our game, we found that absolute directionality (face left, right, up, down) was easier for players to learn. 
+        <!-- 
+        We experimented with using relative directionality, having some success after finding the right diagram [Figure]. We concluded that turning was too difficult to visualize in a digital screen with a top-down view, and was not conducive to planning.
       </p>
       <p>
-        We chose combining movement and direction blocks over keeping them separate. For example, the two block command “Left, Walk” became just “Left”. Despite numerous attempts to show that a “Left” block actually meant “face left” [Figure], players still assumed that a Left block meant move left. Grammatically, keeping turning and walking separate also did not make sense. In English, people say “walk left”, but in our game, “Walk, Left” wouldn’t make sense; the character would first move in the direction that it is currently facing, then turn left. Lastly, combining movement and direction blocks is concise, reducing the number of blocks needed by half.
+        We chose combining movement and direction blocks over keeping them separate. For example, the two block command “Left, Walk” became just “Left”. Despite numerous attempts to show that a “Left” block actually meant “face left” [Figure], players still assumed that a Left block meant move left. 
+        -->
+
+        Grammatically, keeping turning and walking separate also did not make sense. In English, people say “walk left”, but in our game, “Walk, Left” wouldn’t make sense; the character would first move in the direction that it is currently facing, then turn left. Lastly, combining movement and direction blocks is concise, reducing the number of blocks needed by half.
       </p>
       <h3>Evaluation</h3>
       <p>
-        We observed two siblings, a boy age X and girl age Y playing Strawbies in a children’s museum for 40 minutes. The siblings were collaborative, and often discussed where they should go with phrases like “oh look there’s two strawberries down there!” and “no we should go left first then down this way we can get more”. Their constructed sequences consisted of 1-3 blocks, often detaching and attaching different sequences to fit Awbie’s situation. As the two siblings watched Awbie navigate their constructed sequences, we noticed that they were consistently saying each commands as Awbie executed them. This was something that we had only noticed once before combining movement and direction blocks, but became a common trend after.
+        We observed two siblings, a boy and girl, playing Strawbies in a children’s museum for 40 minutes. The siblings were collaborative, and often discussed where they should go with phrases like “oh look there’s two strawberries down there!” and “no we should go left first then down this way we can get more”. Their constructed sequences consisted of 1-3 blocks, often detaching and attaching different sequences to fit Awbie’s situation. As the two siblings watched Awbie navigate their constructed sequences, we noticed that they were consistently saying each commands as Awbie executed them. This was something that we had only noticed once before combining movement and direction blocks, but became a common trend after.
+      <!--
       </p>
       <p>
-        Our navigation blocks are developmentally aligned: children did not struggle with translating their plans into action blocks. Instead we saw a lot of verbal repeating of commands as Awbie executed them, which we thought could be a sign that our direction blocks are aligned with their cognitive perception. The blocks also support sequencing: commands are concise and allow for more elaborate planning. We saw an increase in the complexity of constructed sequences upon combining movement and direction blocks. 
+        Our navigation blocks are developmentally aligned: children did not struggle with translating their plans into action blocks. Instead we saw a lot of verbal repeating of commands as Awbie executed them, which we thought could be a sign that our direction blocks are aligned with their cognitive perception. 
+-->
+        We also found that the blocks with absolute directions were better at supporting sequencing. The new commands are more concise and allow for more elaborate planning. We saw an increase in the complexity of constructed sequences upon combining movement and direction blocks. 
       </p>
 
       <h2 class="no-number">Feedback</h2>
