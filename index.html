@@ -307,32 +307,42 @@
 
       <h2 class="no-number">Compiling</h2>
       <p>
-        Tangible programming environments have a mechanism that players can use to compile, or ‘start’ their code. Using the Osmo and iPad gave us the flexibility of having this mechanism exist in either the TUI or GUI.
+        Many tangible programming environments provide users with input events that trigger the system to compile and run their code. The alternative is to have system continually evaluate code so that changes in arrangment of programming blocks is instantaneously reflected in a runtime environment. Using real-time computer vision opened both of these possibilities. 
       </p>
       <p>
-        Our initial reaction was to keep as much interaction to the tangible interface as possible. One of our first attempts at a purely tangible interface compiled in real time. When blocks slid in front of the game’s field of vision, the character on-screen immediately responded by following and looping those instructions. When those blocks were moved away, the character immediately stopped. If the user attached a When block to any sequence of blocks, the game would pause and bring up a helper which asked if players wanted to save the event block to memory. We wanted our players to think of optimal loops for the world, with event triggers that act as safeguards against dangers (water and birds).
+        Our initial reaction was to keep as much interaction to the tangible interface as possible and evalute programs in real time. When blocks slid in front of the game’s field of vision, the on-screen character immediately responded by following and continually looping those instructions. When blocks were moved away, the character immediately stopped. 
+        <!-- If the user attached a When block to any sequence of blocks, the game would pause and bring up a helper which asked if players wanted to save the event block to memory. We wanted our players to think of optimal loops for the world, with event triggers that act as safeguards against dangers (water and birds). -->
       </p>
       <p>
-        The responsiveness of this real-time interactivity was immediate, but not clear or predictable. Our play testers had trouble maintaining control over their character, and often relied on using hands to cover up blocks when they wanted their character to stop. Moving blocks outside of the camera’s range was too tedious. The field of vision of the camera was also unclear. Sometimes, the camera would pick up blocks that a player forgot about, resulting in unpredictable behavior.
+        The responsiveness of this real-time interactivity was immediate, but not clear or predictable. Our play testers had trouble maintaining control over their character, and often relied on using hands to cover up blocks when they wanted their character to stop; moving blocks outside of the camera’s range was too tedious. The field of vision of the camera was also unclear. Sometimes, the camera would pick up blocks that a player forgot about, resulting in unexpected effects.
       </p>
       <p>
-        Our current iteration uses tapping the screen as our mechanism for compiling [figure]. Players can easily reuse their sequence simply by re-tapping the screen. Once the screen is tapped, blocks can be removed from the game’s vision without affecting the game. This mechanism also has the added benefit of immediately demonstrating that Strawbies can be tapped as well as controlled by tangibles. Without this quick introduction, it was hard to get our users to tap the screen without explicit tutorials. 
+        Our current iteration instead uses a tap on the screen as the triggering event. Players can easily reuse their sequence simply by re-tapping the screen. Once the screen is tapped, blocks can be removed from the game’s vision without affecting the game.
+        <!-- 
+         This mechanism also has the added benefit of immediately demonstrating that Strawbies can be tapped as well as controlled by tangibles. Without this quick introduction, it was hard to get our users to tap the screen without explicit tutorials. 
+         -->
       </p>
       <p>
         The disadvantage of this mechanism is that when users tap the screen, their arm can block a portion of the image that is sent to the game. We tried to resolve this issue by making the tap box of the iPad almost the entire size of the screen, and added a one second delay to the game’s image recognition.
       </p>
       <h3>Evaluation</h3>
       <p>
-        We observe two girls in Kindergarten playing Strawbies in a 30 minute session. The girls had no problem touching the screen to compile their code. However, for the first 10 minutes, they would keep their finger on the screen, in the direction of movement until the character stopped moving. It seemed that they thought Awbie was controllable by dragging as well. While one girl kept her finger on the screen, the other girl shifted blocks around below the girl’s arm. The game’s vision was not getting the full picture of what was happening under the girl’s arm, resulting in inconsistent and confusing actions from Awbie. 
+        We observed players to compile their code in different ways. Some tapped in the direction they wanted Awbie to go, and others tried to drag Awbie around the screen. We weren’t worried about this behavior, as tapping to compile was an open enough mechanic such that many similar motions achieved the same effect. Eventually, as players constructed more elaborate sequences, tapping to compile became the predominant action. 
       </p>
+      <p>
+        Camera occlusion problems were more problemmatic. We observed two girls in Kindergarten playing Strawbies in a 30 minute session. The girls had no problem touching the screen to compile their code. However, for the first 10 minutes, they kept their finger on the screen in the direction of movement until the character stopped. It seemed that they thought Awbie was controllable by dragging as well. While one girl kept her finger on the screen, the other girl shifted blocks around below the girl’s arm. The camera was not able to see the full picture because the blocks were occluded by the girl’s arm, resulting in inconsistent and confusing actions from Awbie. 
+      </p>
+      <!--
       <p>
         After 10 minutes, they wanted to try the “Rainbow” command, a new block that had no path projection. The girls simply tapped the screen, and watched what happened. After this, the girls started to only tap the screen to compile. A few minutes later, the dragging behavior came back when Awbie was not moving as they had planned.
       </p>
+      -->
       <p>
-        We observed players to compile their code in different ways. Some tapped in the direction they wanted Awbie to go, and others tried to drag Awbie around. We weren’t worried about this behavior, as tapping to compile was an open enough mechanic such that many similar motions achieved the same effect. Eventually, as players constructed more elaborate sequences, tapping to compile became the predominant action. 
-      </p>
-      <p>
-        There were a lot of times where Strawbies was very unresponsive. This happened when hands blocked the camera from seeing the blocks. Players took minutes to figure out that they had to move their hands away before the game could respond. This was fine in a classroom setting, where children are familiar with the game, but is not ideal for a more busy space such as a museum. We are hoping to rectify this problem in our next tutorial by introducing a mat which contains two compile buttons that must be simultaneously pushed.
+      <!--
+        There were a lot of times where Strawbies was very unresponsive. This happened when hands blocked the camera from seeing the blocks. Players took minutes to figure out that they had to move their hands away before the game could respond. 
+      -->
+        These kinds of problems are acceptable in a classroom setting, where children had time to familiarize themselves with the game, but they are less ideal for a more informal learning settings like museum. We are hoping to rectify this problem in our next tutorial by introducing a tangible trigger that will not require children to touch the screen at all. 
+        <!-- mat which contains two compile buttons that must be simultaneously pushed. -->
       </p>
 
       <h2 class="no-number">Open World Environment</h2>
