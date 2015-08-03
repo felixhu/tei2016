@@ -204,7 +204,7 @@
     <div id="article-content">
       <h1 class="no-number">Abstract</h1>
       <p>
-        Strawbies is a tangible programming game designed for children ages 5 and up. Players arrange physical programming tiles to guide the movement of an onscreen character (Awbie) through an infinitely expanding world displayed on the screen of an iPad. Strawbies is portable, inexpensive, and fluidly interactive—characteristics made possible with the use of an Osmo game system that includes a mirror to reflect images in front of the iPad through the front­-facing camera. Here we describe a set of principles that guided our design process along with evaluation sessions with children in schools and a museum. The combination of inexpensive tangible tiles and real-time computer vision through a tablet computer opens new possibilities for tangible computer programming to reach a broader audience. We conclude with an overview of the important design considerations for future tangible programming systems that make use of these techniques.
+        Strawbies is a tangible programming game designed for children ages 5 and up. Players arrange physical programming tiles to guide an onscreen character (Awbie) through an infinitely expanding world displayed on an iPad screen. Strawbies is portable, inexpensive, and fluidly interactive—characteristics made possible with the use of an Osmo game system that includes a mirror to reflect images in front of the iPad through the front­-facing camera. Here we describe a set of principles that guided our design process along with evaluation sessions with children in schools and a museum. The combination of inexpensive tangible tiles and real-time computer vision through a tablet computer opens new possibilities for tangible computer programming to reach a broader audience.
       </p>
       
       <h2 class="no-number">Categories and Subject Descriptors</h2>
@@ -221,7 +221,7 @@
       
       <h1>Introduction</h1>
       <p>
-        Strawbies is a tangible programming game designed for children ages 5 and up that combines the use of inexpensive tangible tiles and real-time computer vision through a stationary iPad tablet (Figure 1). Players arrange wooden tiles to guide the movement of an onscreen character (Awbie) through a rich and infinitely expanding world filled with obstacles, thieving rodents, and strawberries. Strawbies is portable, inexpensive, and fluidly interactive. These features are made possible by the use of an Osmo game system (playosmo.com) that uses a mirror to reflect images in front of the iPad through the front­-facing camera. In creating Strawbies, we sought to explore new possibilities opened by this system to create an engaging and collaborative game for wide range of ages and playstyles.
+        Strawbies is a tangible programming game designed for children ages 5 and up that combines the use of inexpensive tangible tiles and real-time computer vision through a stationary iPad tablet (Figure 1). Players arrange wooden tiles to guide an onscreen character (Awbie) through a rich and infinitely expanding world filled with obstacles, thieving rodents, and strawberries. Strawbies is portable, inexpensive, and fluidly interactive. These features are made possible by the use of an Osmo game system (playosmo.com) that uses a mirror to reflect images in front of the iPad through the front­-facing camera. In creating Strawbies, we sought to explore new possibilities opened by this system to create an engaging and collaborative game for a wide range of ages and playstyles.
       </p>
       <p>
         To this point, tangible programming systems have had to make tradeoffs between inexpensive materials, portability, and real-time interaction. Many tangible programming systems have opted to use “smart” tangible components with embedded electronics and power supplies (e.g. [<cite ref="schweikardt-2008"></cite>, <cite ref="mcnerney-2004"></cite>, <cite ref="wyeth-2008"></cite>]). This has the advantage of offering real-time interactive systems that can be used anywhere, with the downside that these systems are relatively expensive to create and manufacture. Other tangible programming systems have instead opted to use computer vision and “passive” tangible blocks or tiles (e.g. [<cite ref="horn-2012"></cite>]). But, the ability to continuously track and respond to programming blocks has either required a stationary overhead camera fixture or an interactive surface with built-­in camera hardware. It is possible to instead use a mobile device like an iPad, but this requires a point-­and­-shoot style of interaction (e.g. [<cite ref="kibo-2015"></cite>, <cite ref="roberto13"></cite>]) in which real-time interaction is sacrificed for the sake of portability. The Osmo's use of a mirror over the top of the iPad’s front-facing camera makes it possible to obtain the best of both worlds by combining fluid, real-­time interaction with a mobile device and low-­cost tangible materials. 
@@ -321,11 +321,11 @@
         We went through several iterations of connection techniques, ultimately settling on two different connection types. The first connection technique is an arrow-hook that attaches action blocks together. This connector allowed action blocks to be attached on a surface only by sliding. The connection was also secure enough such that users could move attached blocks around on a surface without them coming apart. The design was intuitive for our users, as there is an arrow-shaped gap on each action block, invoking the action of connection. We experimented with two previous iterations of connection techniques: our first iteration was too cumbersome to attach, and our second iteration was too easily detached (Figure 3).
       </p>
       <p>
-        The second connection technique was inspired by the circular nature of the TopCode design. We used this connector to attach quantifier and action blocks. Our third iteration of blocks featuring TopCodes allocated a large amount of block space to the TopCode itself (Figure 3). By incorporating TopCodes into our connection technique, we were able to add illustrations to the blocks, without increasing the size of the blocks which was undesirable due to the already limited play space defined by the Osmo. 
+        The second connection technique was inspired by the circular nature of the TopCode design. We used this connector to attach quantifier and action blocks. Our first iteration of blocks featuring TopCodes allocated a large amount of block space to the TopCode itself (Figure 3). By incorporating TopCodes into our connection technique, we were able to add illustrations to the blocks, without increasing the size of the blocks which was undesirable due to the already limited play space defined by the Osmo. 
       </p>
       <h3>Evaluation</h3>
       <p>
-        We observed two girls in Kindergarten playing Strawbies in a classroom for a 30 minute session. In this session, one girl, Player 1, had played Strawbies before, months back. The other girl, Player 2, had never played Strawbies. When the game started, Player 1 assumed full control of the game, immediately acquiring strawberries. This went on for almost 8 minutes, while Player 1 explained to Player 2 how to play the game. We observed that Player 1 was only playing the game using individual commands. As Player 2 played with blocks, she began constructing more elaborate sequences, without prompts from the game. After 8 minutes, Player 2 suggested that they try out her constructed sequence.
+        We observed two girls in Kindergarten playing Strawbies in a classroom for a 15 minute session. In this session, one girl, Player 1, had played Strawbies before, months back. The other girl, Player 2, had never played Strawbies. When the game started, Player 1 assumed full control of the game, immediately acquiring strawberries. This went on for almost 8 minutes, while Player 1 explained to Player 2 how to play the game. We observed that Player 1 was only playing the game using individual commands. While Player 2 played with blocks on the side, she started to construct more elaborate sequences, without prompts from the game. After 8 minutes, Player 2 suggested that they try out her constructed sequence.
       </p>
       <!--
       <p>
@@ -334,7 +334,7 @@
       -->
       <h2 class="no-number">Navigation</h2>
       <p>
-        Navigating the world of Strawbies was the biggest roadblock for our players, and we went through several iterations to try and fix the problem (Figure 4). There were two important choices that we made: relative vs. absolute directionality, and separating vs. combining movement and direction blocks.
+        Navigating the world of Strawbies was one of the biggest roadblock for our players, and we went through several iterations to try and fix the problem (Figure 4). There were two important choices that we made: relative vs. absolute directionality, and separating vs. combining movement and direction blocks.
       </p>
       <p>
         Separating out the action of turning one's body from the action of moving forward is appropriate for many programming systems (such as the Logo turtle). However, for the purposes of our game, we found that absolute directionality (face left, right, up, down) was easier for players to learn. 
@@ -349,18 +349,18 @@
       </p>
       <h3>Evaluation</h3>
       <p>
-        We observed two siblings, a boy and girl, playing Strawbies in a children’s museum for 40 minutes. The siblings were collaborative, and often discussed where they should go with phrases like “oh look there’s two strawberries down there!” and “no we should go left first then down this way we can get more”. Their constructed sequences consisted of 1-3 blocks, often detaching and attaching different sequences to fit Awbie’s situation. As the two siblings watched Awbie navigate their constructed sequences, we noticed that they were consistently saying each commands as Awbie executed them. This was something that we had only noticed once before combining movement and direction blocks, but became a common trend after.
+        We observed two siblings, a boy and girl, playing Strawbies in a children’s museum for 40 minutes. The siblings were collaborative, and often discussed where they should go with phrases like “oh look there’s two strawberries down there!” and “no we should go left first then down this way we can get more”. Their constructed sequences consisted of 1-3 blocks, often detaching and attaching different sequences to fit Awbie’s situation. As the two siblings watched Awbie navigate their constructed sequences, we noticed that they were often mouthing each commands as Awbie executed them. This was something that became a common trend after we combined movement and direction blocks.
       <!--
       </p>
       <p>
         Our navigation blocks are developmentally aligned: children did not struggle with translating their plans into action blocks. Instead we saw a lot of verbal repeating of commands as Awbie executed them, which we thought could be a sign that our direction blocks are aligned with their cognitive perception. 
 -->
-        We also found that the blocks with absolute directions were better at supporting sequencing. The new commands are more concise and allow for more elaborate planning. We saw an increase in the complexity of constructed sequences upon combining movement and direction blocks. 
+        The new commands are more concise and allow for more elaborate planning. We saw an increase in the complexity of constructed sequences upon combining movement and direction blocks. 
       </p>
 
       <h2 class="no-number">Feedback</h2>
       <p>
-        Children are constantly constructing conceptual models to explain how things in the world work [<cite ref="norman-2013"</cite>]. We needed Strawbies to provide immediate, consistent, and clear feedback to our players, without which they would develop false beliefs about how the system worked. We tried to provide feedback about the blocks currently in the camera's field of view in a way that was immediate without being distracting or disruptive. Aside from the natural feedback provided by feeling and connecting tangibles, our feedback was limited to the digital space. Our passive tangibles, which are laser cut from wood, cannot provide any kind of ‘smart’ feedback.
+        Children are constantly constructing conceptual models to explain how things in the world work [<cite ref="norman-2012"</cite>]. We needed Strawbies to provide immediate, consistent, and clear feedback to our players, without which they would develop false beliefs about how the system worked. We tried to provide feedback about the blocks currently in the camera's field of view in a way that was immediate without being distracting or disruptive. Aside from the natural feedback provided by feeling and connecting tangibles, our feedback was limited to the digital space. Our passive tangibles, which are laser cut from wood, cannot provide any kind of ‘smart’ feedback.
       </p>
       <p>
         We explored several options before settling on our current iteration. 
@@ -375,7 +375,7 @@
       </p>
       <h3>Evaluation</h3>
       <p>
-        After the introduction of a projected path, children began modifying their sequence by adjusting the location of their sequence upon seeing different projections than what they had in mind. We also saw players construct more elaborate plans. We observed three Kindergarten students, 2 girls and 1 boy, in a classroom playing Strawbies for 30 minutes. 4 minutes into the game, the children were unable to compile their code, because they were all reaching for the screen and tapping the screen, blocking the TopCodes from being read. One girl shooed away the other players hands, and said “the path needs to be there!” (referincing the screen). 8 minutes into the game, the boy had a sequence that would have run Awbie into a rodent. The two girls yelled, “no! we don’t want to touch it.” The girls then replaced a direction block.
+        After the introduction of a projected path, children began modifying their sequence upon seeing different projections than what they had in mind. We also saw players construct more elaborate plans. We observed three Kindergarten students, 2 girls and 1 boy, in a classroom playing Strawbies for 15 minutes. 4 minutes into the game, the children were unable to compile their code, because they were all reaching for the screen and tapping the screen, blocking the TopCodes from being read. One girl shooed away the other players hands, and said “the path needs to be there!” (referencing the screen). 8 minutes into the game, the boy had a sequence that would have run Awbie into a rodent. The two girls yelled, “no! we don’t want to touch it.” The girls then replaced a direction block.
       </p>
       <!--
       <p>
@@ -422,7 +422,7 @@
       <!--
         There were a lot of times where Strawbies was very unresponsive. This happened when hands blocked the camera from seeing the blocks. Players took minutes to figure out that they had to move their hands away before the game could respond. 
       -->
-        These kinds of problems are acceptable in a classroom setting, where children had time to familiarize themselves with the game, but they are less ideal for a more informal learning settings like museum. We are hoping to rectify this problem in our next tutorial by introducing a tangible trigger that will not require children to touch the screen at all. 
+        These kinds of problems are acceptable in a classroom setting, where children had time to familiarize themselves with the game, but they are less ideal for more informal learning settings like museums. We are hoping to rectify this problem in our next tutorial by introducing a tangible trigger that will not require children to touch the screen at all. 
         <!-- mat which contains two compile buttons that must be simultaneously pushed. -->
       </p>
 
@@ -432,27 +432,27 @@
         <!-- The game was also all around difficult, and failed to be engaging. -->
       </p>
       <p>
-        For the next iteration, we moved away from the classic puzzle game [<cite ref="flanagan-2009"></cite>], which tends to emphasize competitive and linear play with only one (or a small number) of correct answers. We instead focused on developing a game which encouraged collaboration between players across different experience levels and ages by supporting different play-styles.
+        For the next iteration, we moved away from the classic puzzle game, which tends to emphasize competitive and linear play with only one (or a small number) of correct answers [<cite ref="flanagan-2009"></cite>]. We instead focused on developing a game which encouraged collaboration between players across different experience levels and ages by supporting different play-styles.
         <!--  This meant that we had to create a more networked game, one which had real decisions with equally plausible outcomes. [CITE] -->
       </p>
       <p>
         We decided instead to structure our game around a randomly generated open world environment, filled with interactable objects like strawberries, rats, cactuses, trees, water, animals, and more (Figure 6). We took out win/lose states, and instead introduced a more gradual build up of possessions that players could acquire. For example, finding seeds in the world allows you to grow strawberry plants in your farm. Making contact with undesired objects such as rats and cactuses sets Awbie off of a projected path, which deter players from further running into obstacles.
       </p>
       <p>
-        We hoped that an expansive world filled strawberries and other objects would encourage more open-ended and light-hearted collaboration There are no wrong answers. We also wanted to encourage planning, but wanted to do it in a way that was less forced and more fun. 
+        We hoped that an expansive world filled strawberries and other objects would encourage more open-ended and light-hearted collaboration. There are no wrong answers. We also wanted to encourage planning, but wanted to do so in a way that was less forced and more fun. 
       </p>
       <p>
-        There was still structure in the game. We introduced lakes, with lilypads that lead to a treasure island in the middle (Figure 6). To get to the island, players must use a sequence of blocks that would guide the character all the way to the island. The character falls into the water if it takes a misstep and is transported back to the start of the lake. This give players the option to explore more difficult puzzles, but they are also free to skip the lake and move on if they want.
+        There was still structure in the game. We introduced lakes, with lilypads that lead to a treasure island in the middle (Figure 6). To get to the island, players must use a sequence of blocks that would guide the character all the way to the island. The character falls into the water if it takes a misstep and is transported back to the start of the lake. This gives players the option to explore more difficult puzzles, but they are also free to skip the lake and move on if they want.
       </p>
       <p>
         We also introduced “Frenzy Mode”, a fun animation that Awbie goes into when he is about to get multiple Strawbies with one sequence of blocks. This results in more Strawbies, a quicker movement speed, and playful animations. We felt that this was another example of adding structure into what is otherwise an open world game.
       </p>
       <h3>Evaluation</h3>
       <p>
-        We noticed a big change in how players interacted with the game after we introduced the open-world environment. We heard a lot more conversations about decisions and goals, much like this excerpt from a conversation between two boys in Grade 2: P1: “Let’s keep going. Wait actually I think I see up” P2: “No I think we should go down.” P1: “Yeah but if we go up we can use Tornado!”.
+        We noticed a big change in how players interacted with the game after we introduced the open-world environment. We heard a lot more conversations about decisions and goals, much like this excerpt from a conversation between two boys in Grade 2: P1: “Let’s keep going. Wait actually I think I see strawberries up” P2: “No I think we should go down.” P1: “Yeah but if we go up we can use Tornado!”.
       </p>
       <p>
-        We also observed groups of children with different tendencies play together. In one example, a boy and girl in Kindergarten are playing, and the boy continuously to Rainbow around the world. The girl says “See! We’re not getting any Strawbies.” After some discussion, the boy conceded, and the girl moved her sequence of blocks in front of the iPad.
+        We also observed groups of children with different tendencies play together. In one example, a boy and girl in Kindergarten are playing, and the boy continuously to Rainbow around the world. The girl says “See! We’re not getting any Strawbies.” After some discussion, the boy concedes, and the girl moves her sequence of blocks in front of the iPad.
       </p>
       <p>
         Lakes were also effective. Many of our players understood that a more exact and elaborate sequence was necessary to reach the middle treasure island. Some players attempted to solve the puzzle, but others moved on to other goals. We saw the same behavior with Frenzy Mode. Many children only attempted chaining upon reaching a large obvious chain of Strawbies, while others attempted chaining at every possibility. Players showed signs of delight when they pulled off a successful chains.
@@ -476,7 +476,7 @@
       </p>
       <h1>Acknowledgements</h1>
       <p>
-      We thank the administrative teams at Catherine Cook School and Francis W. Parker School for their support. We also thank all the children who have given us valuable feedback through testing. And we thank Eric Uchalik (www.euchalik.com) for designing the assets.
+      We thank the administrative teams at Catherine Cook School, Francis W. Parker School, and Chicago's Children Museum for their support. We also thank all the children who have given us valuable feedback through testing. And we thank Eric Uchalik (www.euchalik.com) for designing the assets.
       </p>
       
       <h1>References</h1>
