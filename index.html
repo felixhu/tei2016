@@ -283,26 +283,30 @@
 
       <h2 class="no-number">Feedback</h2>
       <p>
-        Children are constantly constructing models to explain how things work. We needed Strawbies to provide immediate, consistent, and clear feedback to our players. Without proper feedback, children may construct incorrect models that prevent them from effortlessly engaging with the game. We tried to provide feedback that is a reflection of blocks placed within the game’s field of vision, in a way that was immediate without being distracting or disruptive. Aside from the natural feedback provided by feeling and connecting tangibles, our feedback was limited to the digital space. Our passive tangibles, which are laser cut from wood, cannot provide any kind of ‘smart’ feedback.
+        Children are constantly constructing conceptual models to explain how things in the world work [NORMAN_Designofeverydaythings]. We needed Strawbies to provide immediate, consistent, and clear feedback to our players, without which they would develop false beliefs about how the system worked. We tried to provide feedback about the blocks currently in the camera's field of view in a way that was immediate without being distracting or disruptive. Aside from the natural feedback provided by feeling and connecting tangibles, our feedback was limited to the digital space. Our passive tangibles, which are laser cut from wood, cannot provide any kind of ‘smart’ feedback.
       </p>
       <p>
-        We explored several options before settling on our current iteration, which uses a projection to show how Awbie will travel if the sequence in the field of vision is run [Figure]. We first used half the screen to illustrate what the camera was picking up [Figure]. When a player slides a sequence in front of the iPad, a digital replica of the blocks comes up on screen. We thought this was redundant, and also took up too much screen space.
+        We explored several options before settling on our current iteration. 
+
+        We first used half the screen to show a representation of what the camera sees [Figure]. When a player slid a sequence in front of the iPad, a digital replica of the blocks would appear on the screen. After testing, we decided that this was redundant and  took up too much screen space.
       </p>
       <p>
-        We then placed a live video-feed from the game’s camera in the upper right corner, which circled TopCodes in red as they were recognized [Figure]. We wanted this to bridge the connection between the physical and digital. Despite numerous verbal prompts during testing, we were unable to get children to pay attention to the video feed.
+        We then placed a live video-feed from the game’s camera in the upper right corner, which circled TopCodes in red as they were recognized [Figure]. We wanted this to bridge the connection between the physical and digital. Despite numerous verbal prompts during testing, we were unable to get children to pay attention to the video feed. Since it did not appear to help children understand what was going on, we removed this feature. 
       </p>
       <p>
-        Our current iteration integrates feedback with gameplay. We project a path of Awbie’s future actions onto the world, providing epistemic action [cite] for our players [figure]. The path animates incrementally from Awbie to visualize his potential movement. We felt that this was clear and immediate, but not disruptive or distracting. We hoped this projection will assist our players in the construction of more elaborate plans. 
+        Our current iteration integrates feedback with gameplay. We project a path of Awbie’s future actions onto the world. The path animates incrementally from Awbie to visualize his potential movement. We felt that this was clear and immediate, but not disruptive or distracting. We hoped this projection will assist our players in the construction of more elaborate plans. 
       </p>
       <h3>Evaluation</h3>
       <p>
-        After the introduction of a projected path, children began modifying their sequence or adjusting the location of their sequence upon seeing different projections than what they had in mind. We also saw players construct more elaborate plans. We observed three Kindergarten students, 2 girls and 1 boy, in a classroom playing Strawbies for 30 minutes. 4 minutes into the game, the children were unable to compile their code, because they were all reaching for the screen and tapping the screen, blocking the TopCodes from being read. One girl shoos away the other players hands, and says “the path needs to be there!” 8 minutes into the game, the boy had a sequence that ran Awbie into a rodent. The two girls yelled, “no! we don’t want to touch it.” The girls then replaced a direction block.
+        After the introduction of a projected path, children began modifying their sequence by adjusting the location of their sequence upon seeing different projections than what they had in mind. We also saw players construct more elaborate plans. We observed three Kindergarten students, 2 girls and 1 boy, in a classroom playing Strawbies for 30 minutes. 4 minutes into the game, the children were unable to compile their code, because they were all reaching for the screen and tapping the screen, blocking the TopCodes from being read. One girl shooed away the other players hands, and said “the path needs to be there!” (referincing the screen). 8 minutes into the game, the boy had a sequence that would have run Awbie into a rodent. The two girls yelled, “no! we don’t want to touch it.” The girls then replaced a direction block.
       </p>
+      <!--
       <p>
         The projected path is collaborative: players can agree on a path before compiling. The path is developmentally aligned: our players quickly understood the purpose of the path, and was able to use it effectively. The path helped players create accurate and thoughtful plans, and also led players to troubleshoot when the path was different from the constructed physical sequence. 
       </p>
+      -->
       <p>
-        We are working on making our feedback more responsive. The path projection reacts quickly to blocks that are recognized (under 1.5 seconds), but is not immediate. Without immediate feedback, some children would quickly move the block around, hoping for something to happen on screen. This action however only exacerbates the issue, causing feedback to no longer be clear or predictable. 
+        We are working on making our feedback more responsive. The path projection reacts quickly to blocks that are recognized (under 1.5 seconds), but it is not immediate. Without immediate feedback, some children will quickly move blocks around, hoping for something to happen on screen. This action however only exacerbates issues with the computer vision, causing feedback to no longer be clear or predictable. 
       </p>
 
       <h2 class="no-number">Compiling</h2>
@@ -388,7 +392,9 @@
         We were able to create an inexpensive, portable, and fluid tangible programming environment by using the Osmo play system. Portability allowed for players to play Strawbies in a range of spaces. Inexpensive and passive tangibles allowed us to rapidly prototype and iteratively design our game. Fluidity allowed for a truly engaging experience that kept our players playing.
       </p>
       <p>
-        Through our long and iterative design process, we learned some important lessons that we believe are important for games that use an Osmo and iPad. Games should be designed using existing tablet interactions. Unlike a custom exhibit in a museum, iPads afford certain interactions that users will expect.
+        Through our long and iterative design process, we learned lessons that we believe are important for similar programming environments that combine real-time computer vision with inexpensive tangible compontents. 
+
+        Games should be designed using existing tablet interactions. Unlike a custom exhibit in a museum, iPads afford certain interactions that users will expect.
       </p>
       <p>
         Games must be responsive. Passive tangibles are unable to provide ‘smart’ feedback, so the screen must be responsive to the player’s actions in the physical space. A consistent response can be difficult to achieve using an Osmo, because hands will naturally block portions of the camera’s vision. We’ve found that a consistent response can be achieved through fast image recognition, smart image analysis, and careful observation of how players move their hands. The lack of reliable, immediate, and consistent responses from the screen will be a roadblock that prohibits engagement.
