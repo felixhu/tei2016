@@ -13,7 +13,7 @@ body {
    padding: 0;
    font-family: 'Times New Roman', Times, serif;
    color: black;
-   font-size: 9pt;
+   font-size: 10pt;
    font-weight: normal;
    counter-reset: section refcounter page;
 }
@@ -88,7 +88,7 @@ header { top: 0.2in; }
 
 
 .title {
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: Arial, sans-serif;
    font-size: 18pt;
    font-weight: bold;
    color: black;
@@ -98,27 +98,21 @@ header { top: 0.2in; }
 }
 
 
-.authors, .email {
-   font-family: Helvetica, Arial, sans-serif;
+.authors {
+   font-family: 'Times New Roman', Times, serif;
    font-size: 12pt;
-   font-weight: normal;
+   font-weight: bold;
    text-align: center;
    margin-top: 12pt;
 }
 
 
-.email {
-   margin-top: 6pt;
-   margin-bottom: 24pt;
-}
-
-
-.affiliation {
-   font-family: Helvetica, Arial, sans-serif;
-   font-size: 10pt;
+.email, .affiliation {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 12pt;
    font-weight: normal;
    text-align: center;
-   margin: 0;
+   margin-top: 12pt;
 }
 
 .keywords p {
@@ -127,19 +121,18 @@ header { top: 0.2in; }
 
 
 h1 {
-   font-size: 12pt;
+   font-family: Arial, sans-serif;
+   font-size: 9pt;
    font-weight: bold;
    margin: 3pt 0 0 0;
    text-transform: uppercase;
-   counter-increment: section;
-   counter-reset: subsection;
 }
 
 h2 {
-   font-size: 12pt;
+   font-family: Arial, sans-serif;
+   font-size: 9pt;
    font-weight: bold;
    margin: 3pt 0 0 0;
-   counter-increment: subsection;
 }
 
 h3 {
@@ -148,38 +141,6 @@ h3 {
    font-style: italic;
    margin: 0;
 }
-
-
-h1:before {
-   content: counter(section) "." "\2002";
-}
-
-h2:before {
-   content: counter(section) "." counter(subsection) "\2002";
-   padding-right: 0.075in;
-}
-
-h3:before {
-   counter-increment: none;
-}
-
-h1.no-number {
-   counter-increment: none;
-}
-
-h1.no-number:before {
-   content: "";
-}
-
-h2.no-number {
-   counter-increment: none;
-}
-
-h2.no-number:before {
-   content: "";
-   padding-right: 0;
-}
-
 
 .copyright {
    font-size: 8pt;
